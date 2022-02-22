@@ -7,16 +7,29 @@
 body{
     background-color: antiquewhite;
 }
+
+main{
+    width: 100%;
+    /* da cancellare */
+    height: 90vh;
+    background-color: rgb(77, 177, 180);
+    display: flex;
+    
+}
+
 .part-top{
     background-color: brown;
-    width: 90%;
+    width: 83%;
+    /* da cancellare */
     height: 10vh;
     position: fixed;
     right: 0;
+    top: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
 .button{
     width: 20%;
     height: 50%;
@@ -24,18 +37,89 @@ body{
     display: flex;
     margin-right: 2%;
 }
-aside{
+.part-vertical{
     background-color: burlywood;
-    width: 10%;
+    width: 20%;
+    /* da cancellare */
     height: 90vh;
+    justify-content: space-between;
+}
+/* aside nav */
+.part-vertical,
+.nav-top,
+.nav-bottom{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .nav-top,
 .nav-bottom{
     width: 100%;
     height: 25%;
     background-color: aqua;
-    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+}
+.icon{
+    width: 80%;
+    height: 15%;
+    background-color: royalblue;
+    border: 1px solid red;
+    display: flex;
+}
+.contain{
+    width: 100%;
+    height: 80vh;
+    margin: 16% 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    background-color: rgb(95, 16, 95) ;
+}
+.menu,
+.title{
+    width: calc(100% - 2%);
+    margin: 2%;
+}
+.menu{
+    height: 15%;
+    background-color: rosybrown;
+}
+.title{
+    height: 5%;
+    background-color: rgb(143, 12, 12);
+}
+.cards{
+    display: flex;
+    width: calc((100% / 2) - 4%);
+    margin: 2%;
+    height: 30%;
+    background-color: chartreuse;
+}
+footer{
+    width: 100%;
+    /* da cancellare */
+    height: 10vh;
+    background-color: blueviolet;
+    display: flex;
+}
+.menu-left{
+    width: calc((100% - 50%) / 2);
+    height: 100%;
+    background-color: bisque;
+    display: flex;
+    align-items: flex-start;
+}
+.menu-center{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(223, 135, 27);
+    display: flex;
+    align-items: center;
+}
+.menu-right{
+    width: calc((100% - 50%) / 2);
+    height: 100%;
+    background-color: rgb(113, 150, 14);
+    display: flex;
+    align-items: flex-end;
 }
