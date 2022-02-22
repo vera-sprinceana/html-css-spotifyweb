@@ -3,3 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: antiquewhite;
+}
+.part-top{
+    background-color: brown;
+    width: 90%;
+    height: 10vh;
+    position: fixed;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.button{
+    width: 20%;
+    height: 50%;
+    background-color: antiquewhite;
+    display: flex;
+    margin-right: 2%;
+}
+aside{
+    background-color: burlywood;
+    width: 10%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-top,
+.nav-bottom{
+    width: 100%;
+    height: 25%;
+    background-color: aqua;
+    display: flex;  
+}
