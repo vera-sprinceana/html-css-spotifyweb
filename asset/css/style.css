@@ -4,27 +4,31 @@
     box-sizing: border-box;
 }
 
-body{
+.web-app{
     background-color: antiquewhite;
+    height: 100vh;
 }
-
-main{
+.web-app-top{
+    height: calc(100% - 100px);
+    display: flex;
+}
+.main{
     width: 100%;
     /* da cancellare */
-    height: 90vh;
     background-color: rgb(77, 177, 180);
+    overflow-y: auto;
     display: flex;
-    
+    flex-wrap: wrap;
 }
 
 .part-top{
     background-color: rgba(0,0,0,255);
-    width: 87%;
+    width: 95%;
     /* da cancellare */
-    height: 10vh;
     position: fixed;
     right: 0;
     top: 0;
+    height: 7%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -46,15 +50,18 @@ button{
     color: white;
     border: 1px solid white;
 }
-.part-vertical{
-    width: 15%;
+.aside{
+    width: 5%;
+    height: calc(100% - 100px);
+    z-index: 1;
+    position: fixed;
     /* da cancellare */
-    height: 90vh;
     background-color: rgba(0,0,0,255);
-    justify-content: space-between;  
+    justify-content: space-between;
+    
 }
 /* aside nav */
-.part-vertical,
+.aside,
 .nav-top,
 .nav-bottom{
     display: flex;
@@ -76,7 +83,7 @@ button{
     margin: 10% 0;
 }
 .icon{
-    width: 70%;
+    width: 20px;
     height: 20%;
     display: flex;
 }
@@ -85,27 +92,25 @@ button{
     background-color: grey;
     border-radius: 60%;
 }
-.contain{
+/* .contain{
     width: 100%;
-    height: 80vh;
-    margin: 16% 0;
+    margin-top: 10%;
     display: flex;
     flex-wrap: wrap;
-    overflow-y: scroll;
     background-color: rgb(95, 16, 95) ;
-}
+} */
 .menu,
 .title{
     width: calc(100% - 1%);
     margin: 1%;
 }
 .menu{
+    margin-top: 11%;
     width: 100%;
     height: 10%;
     background-color: rosybrown; 
     display: flex;
     flex-wrap: wrap;
-   
     flex-direction: column;
 }
 
@@ -141,12 +146,14 @@ ul{
     height: 35%;
     background-color: chartreuse;
 }
-
-footer{
+.web-app-bottom{
+    height: 100px;
+    background-color: coral;
     display: flex;
-    width: 100%;
+}
+.footer{
+    display: flex;
     background-color: blueviolet;
-    height: 10vh;
 }
 .menu-left{
     width: 30%;
