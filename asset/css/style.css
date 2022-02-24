@@ -3,8 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.color-white{
+    color: white;
+}
 .f-size{
-    font-size: 1.1em;
+    font-size: 1.3em;
+}
+.f-size-2{
+    font-size: 1.5em;
 }
 .web-app{
     background-color: antiquewhite;
@@ -77,11 +83,26 @@ button{
 .nav-top{
     justify-content: space-around;
 }
+.nav-center{
+    display: none;
+}
+.name-playlist{
+    display: none;
+    color: rgba(163,163,163,255);
+    font-size: 1.4em;
+    margin: 4% 2%;
+}
 .nav-bottom{
     justify-content: flex-end;
 }
 .nav-bottom>.icon{
     margin: 10% 0;
+}
+.logo{
+    display: none;
+    width: 30%;
+    height: 40%;
+    color: white;
 }
 .icon{
     width: 17px;
@@ -90,6 +111,12 @@ button{
 .profile{
     background-color: grey;
     border-radius: 60%;
+}
+hr{
+    margin: 0 auto;
+    width: 90%;
+    height: 2%;
+    background-color: rgba(96,98,104,255);
 }
 /*ANCHOR MENU & TITLE*/
 .menu,
@@ -284,4 +311,58 @@ input{
     width: 100%;
     height: 20%;
     background-color: lightslategray;
+}
+
+/*ANCHOR MAX WIDTH 768PX*/
+@media screen and (min-width: 768px) and (max-width: 900px){
+    .aside{
+        width: 30%;  
+    }
+    .aside,
+    .nav-top,
+    .nav-bottom{
+        display: flex;
+        align-items: flex-start;
+    }
+    .nav-center{
+        color: rgba(163,163,163,255);
+        display: flex;
+        flex-direction: column;
+        text-transform: capitalize;
+        width: 100%;
+        height: 50%;
+    }
+    div> h2{
+        color: white;
+        font-size: 1.5em;
+        padding: 2%;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+    .fa-square-plus{
+        font-size: 4em;
+        display: flex;
+        padding-right: 2%;
+    }
+    .name-playlist{
+        display: block;
+    }
+    .logo-small{
+        display: none;
+    }
+    .logo{
+        display: block;
+    }
+    .icon{
+        color: rgba(163,163,163,255);
+        width: 20%;
+        padding-left: 3%;
+        display: flex;
+        white-space: nowrap;
+        text-transform: capitalize;
+        align-items: center;
+    }
+    .profile{
+        background-color: grey;
+        border-radius: 60%;
 }
